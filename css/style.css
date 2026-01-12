@@ -1,0 +1,125 @@
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+    header img {
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    main {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .footer-btn {
+        display: inline-block;
+        margin: 0.75rem 0 0 0;
+        width: auto;
+        text-align: center;
+    }
+    footer {
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* General Styles */
+html {
+    min-height: 100%;
+    background: linear-gradient(180deg, #004843 0%, #002d22 100%);
+}
+body {
+    margin: 0;
+    font-family: 'Futura', Arial, sans-serif;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header Styles */
+header {
+    background: #004843;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid #fff;
+}
+
+header img {
+    height: 90px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #FF3333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+
+    .footer-btn {
+        display: inline-block;
+        margin-left: 1.5rem;
+        padding: 0.5em 1.2em;
+        background: #00b86b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .footer-btn:hover {
+        background: #009e5c;
+    }

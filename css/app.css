@@ -1,0 +1,126 @@
+/* Poker Table Styles */
+#poker-game .table-container {
+  background: radial-gradient(ellipse at center, #217a3a 60%, #14522a 100%);
+  border: 6px solid #bfa76f;
+  border-radius: 50% / 40%;
+  width: 95vw;
+  max-width: 600px;
+  height: 340px;
+  margin: 2rem auto 2rem auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#poker-game .table-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  margin: 1.2em 0 0.5em 0;
+}
+#poker-game .table-player, #poker-game .table-computer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1em;
+}
+#poker-game .table-player {
+  bottom: 1.2em;
+}
+#poker-game .table-computer {
+  top: 1.2em;
+}
+#poker-game .table-pot {
+  position: absolute;
+  top: 2.2em;
+  right: 2.5em;
+  left: auto;
+  transform: none;
+  background: #fffbe6;
+  color: #333;
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+#poker-game .table-label {
+  font-size: 0.9em;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+  margin-bottom: 0.2em;
+}
+#poker-game .table-controls {
+  margin-top: 1.5em;
+  text-align: center;
+}
+#poker-game .table-btn {
+  background: #bfa76f;
+  color: #222;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1.2em;
+  margin: 0 0.3em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#poker-game .table-btn:hover {
+  background: #e6c97a;
+}
+#poker-game .table-chip {
+  background: #fffbe6;
+  color: #217a3a;
+  border-radius: 1em;
+  padding: 0.2em 0.7em;
+  font-size: 0.95em;
+  margin-left: 0.5em;
+  font-weight: bold;
+  border: 1.5px solid #bfa76f;
+}
+@media (max-width: 700px) {
+  #poker-game .table-container {
+    width: 90vw;
+    height: 160px;
+    min-width: 0;
+    max-width: 95vw;
+    border-width: 3px;
+    margin: 1rem auto 1rem auto;
+  }
+  #poker-game .table-player, #poker-game .table-computer {
+    font-size: 0.8em;
+    gap: 0.5em;
+  }
+  #poker-game .table-pot {
+    font-size: 0.85em;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em 0.7em;
+  }
+  #poker-game .table-cards span {
+    min-width: 1.5em;
+    font-size: 0.95em;
+    padding: 0.15em 0.3em;
+  }
+  #poker-game .table-chip {
+    font-size: 0.8em;
+    padding: 0.1em 0.4em;
+    margin-left: 0.2em;
+  }
+  #poker-game .table-icon {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
+  #poker-game .table-controls {
+    margin-top: 0.7em;
+  }
+  #poker-game .table-btn {
+    font-size: 0.95em;
+    padding: 0.4em 0.7em;
+  }
+}
